@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+</head>
+
+<body>
+    <script id="team-template" type="text/x-handlebars-template">
+        {{#each player}}
+     <div class="player">
+         <p>{{firstName}} {{lastName}}</p>
+         <p>{{jersey}}</p>
+         <p>{{pos}}</p> 
+         <!--<img src="https://nba-players.herokuapp.com/players/{{lastName}}/{{firstName}}" alt=" ">-->
+    </div> 
+        {{/each}}   
+    </script>
+
+    <div class="container">
+        <input id="team-name" type="text">
+        <button onclick="fetchData()" id="team-members">GET Roster</button>
+    </div>
+
+    <div class="team-container"></div>
+
+</body>
+<script src="main.js"></script>

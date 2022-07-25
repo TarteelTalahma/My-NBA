@@ -1,0 +1,36 @@
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.player {
+    height: 220px;
+    width: 200px;
+    background-color: chocolate;
+    size: 30px;
+    margin: 15px 5px 15px 5px;
+    padding: 10px;
+    border: 1px solid #999999;
+    text-align: center;
+    font-size: 25px;
+}
+
+body {
+    background-color: lightgrey;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#team-name {
+    width: 1300px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#team-members {
+    width: 180px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
